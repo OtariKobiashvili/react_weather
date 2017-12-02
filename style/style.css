@@ -1,0 +1,33 @@
+html,body {
+  height:100%;
+}
+
+.table td:not(:first-child), .table th {
+  vertical-align: bottom !important;
+}
+
+td, th {
+  text-align: center !important;
+}
+
+.input-group {
+ margin: 20px 0px;
+}
+
+td:first-of-type > div > .map {
+  height: 160px;
+}
+
+@media only screen and (max-width: 767px) {
+  td:first-of-type > div > .map {
+    display: none;
+  }
+
+  td:first-of-type > div  {
+    vertical-align: middle;
+  }
+
+  td, th {
+    font-size: .8em;
+  }
+}
